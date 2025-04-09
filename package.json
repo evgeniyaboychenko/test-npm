@@ -1,10 +1,12 @@
 {
   "name": "@evgeniyaboychenko/test-npm",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A custom React component library",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "rollup": "rollup -c"
+    "rollup": "rollup -c",
+    "dryrelease": "standard-version --dry-run",
+    "release": "standard-version -a"
   },
   "repository": {
     "type": "git",
