@@ -1,8 +1,5 @@
 {
   "name": "@evgeniyaboychenko/test-npm",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/evgeniyaboychenko"
-  },
   "version": "1.0.0",
   "description": "A custom React component library",
   "scripts": {
@@ -32,13 +29,17 @@
     "typescript": "^5.8.3"
   },
   "peerDependencies": {
-  "react": ">=18.0.0",
-  "react-dom": ">=18.0.0"
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
   },
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "files": [
     "dist"
   ],
-  "types": "dist/index.d.ts"
+  "types": "dist/index.d.ts",
+  "dependencies": {
+    "@evgeniyaboychenko/test-npm": "file:evgeniyaboychenko-test-npm-1.0.0.tgz",
+    "test-npm": "file:test-npm-1.0.0.tgz"
+  }
 }
