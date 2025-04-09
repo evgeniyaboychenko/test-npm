@@ -27,14 +27,12 @@ export default [
       commonjs(),
       typescript({
         tsconfig: "./tsconfig.json",
-        declaration: true,
-        declarationDir: 'dist',
       }),
     ],
   },
-  // {
-  //   input: "dist/esm/types/index.d.ts",
-  //   output: [{ file: "dist/index.d.ts", format: "esm" }],
-  //   plugins: [dts()],
-  // },
+  {
+    input: "dist/esm/types/index.d.ts",
+    output: [{ file: "dist/index.d.ts", format: "esm" }],
+    plugins: [dts()],
+  },
 ];
