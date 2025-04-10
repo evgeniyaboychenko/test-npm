@@ -1,18 +1,16 @@
 import React from "react";
+import { configurator } from "../../features";
 
 export interface IProps {
   label: string;
   type: "button" | "submit" | "reset";
-  color: string;
 }
 
 const Button = (props: IProps) => {
-  const { label , type="button", color} = props;
+  const { label , type="button"} = props;
   return (
     <button type={type}
-      style={{
-      color: color
-    }} >
+      style={configurator.style} >
       {label}
     </button>
   )
